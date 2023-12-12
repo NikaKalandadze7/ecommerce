@@ -1,0 +1,23 @@
+* {
+  font-family: "DM Sans", "Poppins", sans-serif;
+}
+body {
+  background-color: #f6f6f6;
+}
+.group::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.group:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

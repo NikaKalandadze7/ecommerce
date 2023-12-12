@@ -1,0 +1,37 @@
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home";
+import ProductDisplay from "./pages/ProductDisplay";
+import Products from "./pages/Products";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { createContext, useState } from "react";
+export const CartProductsContext = createContext([]);
+export const FavoriteProductsContext = createContext([]);
+
+function App() {
+  const [cartProducts, setCartProducts] = useState([]);
+  const [favoriteProducts, setFavoriteProducts] = useState([]);
+
+  return (
+    <CartProductsContext.Provider value={{ cartProducts, setCartProducts }}>
+      <FavoriteProductsContext.Provider
+        value={{ favoriteProducts, setFavoriteProducts }}
+      >
+        <Router>
+          <>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDisplay />} />
+            </Routes>
+            <Footer />
+          </>
+        </Router>
+      </FavoriteProductsContext.Provider>
+    </CartProductsContext.Provider>
+  );
+}
+
+export default App;
