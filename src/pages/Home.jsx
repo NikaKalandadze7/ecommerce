@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="flex items-center flex-col ">
       <HeroBanner />
-      <div className="main-container flex flex-row gap-6 pt-6">
+      <div className="main-container flex flex-row xs:flex-wrap gap-6 pt-6">
         <SecondaryBanner
           title={"A Community doing good"}
           text={"Commerce is a global online marketplace, where people."}
@@ -26,7 +26,7 @@ const Home = () => {
           texture={texture3}
         />
       </div>
-      <div className="main-container py-16 text">
+      <div className="main-container py-16 text overflow-scroll">
         <ThumbnailList />
       </div>
     </div>

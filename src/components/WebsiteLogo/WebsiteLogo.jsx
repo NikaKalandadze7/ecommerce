@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import MainIcon from "../icons/MainIcon";
 import { useNavigate } from "react-router-dom";
 
 const WebsiteLogo = () => {
@@ -10,10 +9,10 @@ const WebsiteLogo = () => {
   };
   return (
     <button
-      className="max-h-10 h-full max-w-[200px] w-full"
+      className="max-h-10 h-full w-full md:max-w-[200px] xl:text-2xl md:text-xl sm:max-w-[150px] xs:max-w-[100px] xs:text-base sm:text-lg font-extrabold text-left text-primary"
       onClick={() => handleNavigate()}
     >
-      <MainIcon height={"48px"} width={"200px"} color={"#303C4E"} />
+      E-Store
     </button>
   );
 };

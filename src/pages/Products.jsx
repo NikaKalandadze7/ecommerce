@@ -4,7 +4,7 @@ const Products = () => {
   return (
     <div className="flex justify-center pt-6">
       <div className="main-container">
-        <div className="flex flex-row flex-wrap gap-6">
+        <div className="flex flex-row justify-center flex-wrap gap-6">
           <ProductsList />
         </div>
       </div>

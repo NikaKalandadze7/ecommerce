@@ -86,19 +86,22 @@ const ProductDisplay = () => {
   return (
     <div className="flex items-center  flex-col">
       <div className="main-container">
-        <div className="flex flex-row flex-nowrap w-full gap-12 mt-16">
-          <div className="max-w-[50%]">
+        <div className="flex md:flex-row xs:flex-col flex-nowrap w-full gap-12 mt-16 items-center">
+          <h1 className="md:text-5xl xs:text-3xl font-bold text-primary md:my-12 md:hidden xs:block">
+            {product?.title}
+          </h1>
+          <div className="md:max-w-[50%] xs:max-w-[85%]  sm:max-w-[85%] md:max-h-[526px] md:h-[500px] xs:h-[263px]  md:m-0 xs:mb-4">
             <img
               src={product?.image}
               alt="Product Image"
               className="w-full h-full"
             />
           </div>
-          <div className="flex flex-col gap-14 max-w-[60%]">
-            <h1 className="text-5xl font-bold text-primary my-12">
+          <div className="flex flex-col gap-14 md:max-w-[60%] xs:max-w-[85%]">
+            <h1 className="md:text-5xl xs:text-3xl font-bold text-primary my-12 md:block xs:hidden">
               {product?.title}
             </h1>
-            <p className="text-base font-medium w-full border-t-[#c7c7c7] border-t-[1px] pt-8">
+            <p className="md:text-base xs:text-xs text-center font-medium w-full border-t-[#c7c7c7] border-t-[1px] pt-8">
               {product?.description}
             </p>
             <p className="text-xs">Category: {product?.category}</p>
@@ -122,7 +125,7 @@ const ProductDisplay = () => {
           <h4 className="text-sm font-semibold ">
             Check out other products in the category:
           </h4>
-          <div className="flex flex-row gap-6 my-12 ">
+          <div className="flex flex-row gap-6 my-12 overflow-x-scroll items-center h-[350px]">
             {categoryProductData.map((data) => (
               <ProductCardSmall
                 key={data?.id}

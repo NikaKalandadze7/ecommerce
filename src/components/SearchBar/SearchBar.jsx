@@ -41,7 +41,7 @@ const SearchBar = () => {
   }, [searchText]);
 
   return (
-    <div className="flex justify-between xl:max-w-[760px] w-full lg:max-w-[540px]  md:max-w-[330px] sm:max-w-[220px] h-12 items-center gap-4 flex-shrink-0 rounded-full bg-white pl-2 border-[1px] border-solid border-[#c7c7c7] relative z-20">
+    <div className="flex justify-between xl:max-w-[760px] w-full lg:max-w-[680px]  md:max-w-[520px]  sm:max-w-[330px] xs:max-w[400px] h-12 items-center gap-4 flex-shrink-0 rounded-full bg-white pl-2 border-[1px] border-solid border-[#c7c7c7] relative z-[1]">
       <SearchInput
         onKeyUp={(e) => handleFilter(e)}
         onFocus={() => onFocus()}

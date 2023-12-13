@@ -4,7 +4,7 @@
 
 @layer components {
   .card-large {
-    @apply min-w-[20%] w-[calc(25%-20px)] rounded-[10px] xl:h-[418px] lg:h-[368px] md:h-[318px] sm:h-[258px] md:p-6 xs:p-3 overflow-hidden shadow-md relative ease-in-out duration-300 hover:scale-105 hover:z-20;
+    @apply min-w-[135px] w-[calc(25%-20px)] rounded-[10px] xl:h-[418px] lg:h-[368px] md:h-[318px] sm:h-[258px] md:p-6 xs:p-3 overflow-hidden shadow-md relative ease-in-out duration-300 hover:scale-105 hover:z-20;
   }
   .button-large {
     @apply flex justify-between text-white bg-primary lg:text-sm leading-5 font-semibold rounded-[10px] max-w-xs w-full lg:py-5 lg:px-[30px] xs:py-3 xs:px-[15px] xs:text-xs  hover:bg-tretiary ease-in-out duration-200;
@@ -13,6 +13,6 @@
     @apply flex justify-between text-white bg-primary lg:text-xs leading-5 font-medium rounded-[10px] w-full lg:py-2 lg:pl-3 lg:pr-2  xs:py-1 xs:pl-3 xs:text-[10px] hover:bg-tretiary ease-in-out duration-200;
   }
   .main-container {
-    @apply w-full xl:max-w-[1320px] lg:max-w-[1080px] md:max-w-4xl sm:max-w-2xl xs:max-w-xl;
+    @apply w-full xl:max-w-[1320px] lg:max-w-[1080px] md:max-w-4xl sm:max-w-2xl xs:max-w-xl xs:p-2;
   }
 }

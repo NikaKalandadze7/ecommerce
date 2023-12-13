@@ -24,13 +24,13 @@ const UserArea = () => {
   };
 
   return (
-    <div className="flex flex-row lg:flex-wrap xl:gap-4 lg:gap-2   relative">
+    <div className="flex flex-row lg:flex-wrap xl:gap-4 xs:gap-2   relative">
       <button
         onClick={toggleAccountDropdown}
         className="flex flex-row items-center gap-2 rounded-lg px-1 hover:text-secondary"
       >
         <UserIcon height={"24px"} width={"24px"} color={"black"} />
-        <div className="lg:block md:hidden sm:hidden">
+        <div className="lg:block md:hidden sm:hidden xs:block ">
           <ButtonTextBasic content={"Account"} />
         </div>
       </button>
@@ -46,10 +46,10 @@ const UserArea = () => {
         className="flex flex-row items-center gap-2 relative rounded-lg px-1 hover:text-secondary"
       >
         <ShoppingCartIcon height={"24px"} width={"24px"} color={"black"} />
-        <div className="lg:block md:hidden sm:hidden">
+        <div className="lg:block md:hidden sm:hidden xs:block">
           <ButtonTextBasic content={"Shopping"} />
         </div>
-        <div className="absolute xl:left-4 xl:-top-2 lg:left-5 lg:-top-5 md:left-5 md:-top-2 sm:left-4 sm:-top-2 rounded-[50%] h-6 w-6 bg-primary text-white text-center text-xs flex justify-center items-center ">
+        <div className="absolute xl:left-4 xl:-top-2 lg:left-5 lg:-top-5 md:left-5 md:-top-2 xs:left-4 xs:-top-2 rounded-[50%] h-6 w-6 bg-primary text-white text-center text-xs flex justify-center items-center ">
           <span className="">{getTotalItemCount(cartProducts)}</span>
         </div>
       </button>

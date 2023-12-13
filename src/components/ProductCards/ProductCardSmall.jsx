@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 const ProductCardSmall = ({ price, category, title, image, id }) => {
   return (
-    <div className="min-w-[15%] w-[calc(100%/6-24px)] rounded-[10px] h-[290px] p-4 shadow-md relative ease-in-out duration-300 hover:scale-105 hover:z-20 bg-white">
+    <div className="w-[190px] rounded-[10px] h-[290px] p-4 shadow-md relative ease-in-out duration-300 hover:scale-105 hover:z-20 bg-white">
       <div
         className="bg-cover bg-top pt-[90%]"
         style={{ backgroundImage: `url(${image})` }}
