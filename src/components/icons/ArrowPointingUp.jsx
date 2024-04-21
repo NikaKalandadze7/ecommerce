@@ -14,8 +14,8 @@ const ArrowPointingUp = ({ color, height, width }) => {
         <path
           d="M1 8L7 2M7 2L13 8M7 2L7 17"
           stroke={color}
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
       </svg>
     </div>

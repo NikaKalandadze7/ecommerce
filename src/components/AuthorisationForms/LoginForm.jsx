@@ -13,7 +13,7 @@ const LoginForm = () => {
     localStorage.getItem("token") ? true : false
   );
 
-  console.log(loggedIn);
+ 
   const handleErrorClose = () => {
     setErrorOpen(false);
   };

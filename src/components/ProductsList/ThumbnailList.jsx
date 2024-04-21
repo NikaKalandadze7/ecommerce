@@ -20,7 +20,7 @@ const ThumbnailList = () => {
     })();
   }, []);
   return (
-    <div className="flex flex-row  flex-nowrap gap-6">
+    <div className=" flex flex-row  flex-nowrap justify-between">
       {productData.map((data) => (
         <ProductThumbnail
           key={data.id}

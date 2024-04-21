@@ -26,7 +26,7 @@ const Home = () => {
           texture={texture3}
         />
       </div>
-      <div className="main-container py-16 text overflow-scroll">
+      <div className="main-container py-16 text overflow-auto ">
         <ThumbnailList />
       </div>
     </div>

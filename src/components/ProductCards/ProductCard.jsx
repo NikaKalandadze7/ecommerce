@@ -26,7 +26,7 @@ const ProductCard = ({ price, category, title, image, id, object }) => {
     } else {
       setFavoriteProducts((current) => [...current, object]);
     }
-    console.log(favoriteProducts);
+ 
   };
 
   return (

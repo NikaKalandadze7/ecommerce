@@ -34,7 +34,7 @@ const CategoryMenu = () => {
         <Burger width={"28px"} height={"28px"} color={"black"} />
       </button>
       <ul
-        className={`flex sm:static  sm:flex-row xs:flex-col justify-between sm:gap-6 xs:gap-0  xs:absolute xs:top-10 xs:-left-2 z-20 xs:bg-secondaryLight h-full  ${
+        className={`md:flex sm:static  sm:flex-row xs:flex-col justify-between sm:gap-6 xs:gap-0  xs:absolute xs:top-10 xs:-left-2 z-20 xs:bg-secondaryLight h-full  ${
           isOpen ? "xs:flex" : "xs:hidden"
         }`}
       >
