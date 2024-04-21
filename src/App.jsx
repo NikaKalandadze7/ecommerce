@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import ProductDisplay from "./pages/ProductDisplay";
 import Products from "./pages/Products";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter  as Router, Route, Routes } from "react-router-dom";
 import { createContext, useState } from "react";
 export const CartProductsContext = createContext([]);
 export const FavoriteProductsContext = createContext([]);
@@ -22,9 +22,9 @@ function App() {
           <>
             <Header />
             <Routes>
-              <Route path="/" exact component={<Home />} />
-              <Route path="/products" component={<Products />} />
-              <Route path="/products/:id" component={<ProductDisplay />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDisplay />} />
             </Routes>
             <Footer />
           </>
