@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import ProductDisplay from "./pages/ProductDisplay";
 import Products from "./pages/Products";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { createContext, useState } from "react";
 export const CartProductsContext = createContext([]);
 export const FavoriteProductsContext = createContext([]);
