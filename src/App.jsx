@@ -22,9 +22,9 @@ function App() {
           <>
             <Header />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/products/:id" element={<ProductDisplay />} />
+              <Route path="/" exact component={<Home />} />
+              <Route path="/products" component={<Products />} />
+              <Route path="/products/:id" component={<ProductDisplay />} />
             </Routes>
             <Footer />
           </>
